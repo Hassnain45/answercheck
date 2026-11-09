@@ -1,0 +1,20 @@
+# Makes the code in src/answercheck installable, so `import answercheck` works
+# from anywhere (tests, notebooks, scripts). Package versions live in requirements.txt.
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "answercheck"
+version = "0.0.1"
+description = "Short-answer self-check for students (study aid, not an official grader)"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]  # lets tests find the package even before `pip install -e .`

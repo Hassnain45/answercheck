@@ -1,0 +1,42 @@
+# --- Data: never committed (downloaded by code instead) ---
+data/
+*.csv
+*.parquet
+*.arrow
+
+# --- Model files and checkpoints: too big for git, kept on Google Drive / HF Hub ---
+checkpoints/
+outputs/
+runs/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.onnx
+
+# --- Secrets: never committed ---
+.env
+.env.*
+*.key
+*token*
+
+# --- Python and tool caches ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Editor / OS files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

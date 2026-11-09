@@ -1,0 +1,25 @@
+# Pinned versions: everyone (your laptop, Colab, the app) gets the same code.
+# Checked to install together and pass the tests on Python 3.13 (9 Nov 2026).
+#
+# Note for Colab: the setup notebook keeps Colab's own torch build (it matches
+# Colab's GPU drivers) and installs everything else from this file.
+
+# Deep learning
+torch==2.15.0
+transformers==5.22.2
+datasets==5.1.0
+
+# Classic ML, data handling, configs
+scikit-learn==1.9.1
+numpy==2.5.4
+pandas==3.1.1
+pyyaml==6.0.3
+
+# Web app
+gradio==6.31.0
+
+# Training curves
+tensorboard==2.21.0
+
+# Tests
+pytest==9.2.0
