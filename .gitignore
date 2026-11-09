@@ -1,6 +1,6 @@
 # --- Data: never committed (downloaded by code instead) ---
-data/
-*.csv
+# The leading "/" means only the top-level data/ folder, not src/answercheck/data/.
+/data/
 *.parquet
 *.arrow
 
@@ -19,7 +19,7 @@ runs/
 .env
 .env.*
 *.key
-*token*
+secrets/
 
 # --- Python and tool caches ---
 __pycache__/
